@@ -1,0 +1,5 @@
+tests:
+  - name: test 1
+    stdin: "0"
+    stdout:
+      - contains: "Number of seconds"
