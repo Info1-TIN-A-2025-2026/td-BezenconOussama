@@ -1,0 +1,9 @@
+tests:
+  - name: test 1
+    stdin: "245.27 240 341"
+    stdout:
+      - contains: "24.47"
+  - name: test 2
+    stdin: "400 600 365"
+    stdout:
+      - contains: "209.54"
