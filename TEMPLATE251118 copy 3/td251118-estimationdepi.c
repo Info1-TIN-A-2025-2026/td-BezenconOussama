@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 int main(int argc, const char *argv[]) {
-    int i = 0;
-    double a = 0;
-    do
+    srand(time(NULL));// on mets le temps dedans 
+    for (int i = 0; i<5;++i)
     {
-        double f = (pow(-1, i) / (2 * i + 1));
-        a = a + f;
-        printf("a = %lf\n",4.*a);
-        i++;
-    } while (fabs((4. * a) - M_PI) >= 0.0000001);
+        printf("% d\n", rand());/// max est rand max  0....RAND_MAX
+    }
+    printf("%d", RAND_MAX);
+    ///////////raand a une seed il faut la modifié
 }
